@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Profile</title>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="content">
+            <img src="image-patrick.jpg" alt="">
+            <h2>Patrick Herrira <br><span>Web Designer</span></h2>
+        </div>
+
+
+        <ul>
+            <li>
+                <a href="">
+                    <i class="fas fa-user"></i> Edit Proile
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-message"></i> Inbox
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-arrows-turn-to-dots"></i> Settings
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-exclamation"></i> Support
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-sign-out"></i> Sign Out
+                </a>
+            </li>
+        </ul>
+        <div class="indicator">
+            <i class="fas fa-arrow-down"></i>
+        </div>
+    </div>
+
+    <script>
+        let card = document.querySelector('.card');
+        let arrow = document.querySelector('.indicator');
+
+        arrow.addEventListener('click', () => {
+            card.classList.toggle('active');
+        })
+    </script>
+
+</body>
+
+</html>
